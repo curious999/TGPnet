@@ -1,0 +1,12 @@
+seg_path='./human/data/ATR/train_images';
+save_path='./human/data/Single/resize_train_images/';
+seg = dir(seg_path);
+seg = seg(3:end);
+for page=1:2:size(seg)
+    img2 = imread([seg_path,GT_seg(page).name(1:end-4),'.png']);
+    img = imread([seg_path,GT_seg(page).name(1:end-4),'.jpg']);
+    B=X_label_resize(img2,[300,200]);
+    A=imresize(img,[300,200]);
+    imwrite(B,[save_path,seg(page).name(1:end-4),'.png']);
+    imwrite(A,[save_path,seg(page).name(1:end-4),'.jpg']);
+end
