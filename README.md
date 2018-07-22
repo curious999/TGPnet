@@ -8,7 +8,8 @@ Human parsing, which segments a human-centric image into pixel-wise categorizati
 
 Please consult and consider citing the following papers:
 
-```@InProceedings{Luo_2018_TGPnet,
+```
+@InProceedings{Luo_2018_TGPnet,
       author = {Luo, Xianghui and Su, Zhuo and Guo, Jiaming and Zhang, Gengwei and He, Xiangjian},
       title = {Trusted Guidance Pyramid Network for Human Parsing},
       booktitle = {The 2018 ACM on Multimedia Conference},
