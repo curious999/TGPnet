@@ -4,17 +4,18 @@ Xianghui Luo, Zhuo Su, Jiaming Guo, Gengwei Zhang, Xiangjian He, "Trusted Guidan
 ### Introduction
 
 
-Human parsing, which segments a human-centric image into pixel-wise categorization, has a wide range of applications. However, none of the existing methods can productively solve the issue of label parsing fragmentation due to confused and complicated annotations. In this paper, we propose a novel Trusted Guidance Pyramid Network (TGPNet) to address this limitation. Based on a pyramid architecture, we design a Pyramid Residual Pooling (PRP) module setting at the end of a bottom-up approach to capture both global and local level context. In the top-down approach, we propose a Trusted Guidance Multi-scale Supervision (TGMS) that efficiently integrates and supervises multi-scale contextual information. Furthermore, we present a simple yet powerful Trusted Guidance Framework (TGF) which imposes global-level semantics into parsing results directly without extra ground truth labels in model training. Extensive experiments on two public human parsing benchmarks well demonstrate that our TGPNet has a strong ability in solving label parsing fragmentation problem and has an obtained improvement than other methods.Our TGPNet are trained and tested based on the[Caffe](http://caffe.berkeleyvision.org).
+Human parsing, which segments a human-centric image into pixel-wise categorization, has a wide range of applications. However, none of the existing methods can productively solve the issue of label parsing fragmentation due to confused and complicated annotations. In this paper, we propose a novel Trusted Guidance Pyramid Network (TGPNet) to address this limitation. Based on a pyramid architecture, we design a Pyramid Residual Pooling (PRP) module setting at the end of a bottom-up approach to capture both global and local level context. In the top-down approach, we propose a Trusted Guidance Multi-scale Supervision (TGMS) that efficiently integrates and supervises multi-scale contextual information. Furthermore, we present a simple yet powerful Trusted Guidance Framework (TGF) which imposes global-level semantics into parsing results directly without extra ground truth labels in model training. Extensive experiments on two public human parsing benchmarks well demonstrate that our TGPNet has a strong ability in solving label parsing fragmentation problem and has an obtained improvement than other methods.Our TGPNet are trained and tested based on the [Caffe](http://caffe.berkeleyvision.org).
 
 Please consult and consider citing the following papers:
 
-@InProceedings{Luo_2018_TGPnet,
+```@InProceedings{Luo_2018_TGPnet,
       author = {Luo, Xianghui and Su, Zhuo and Guo, Jiaming and Zhang, Gengwei and He, Xiangjian},
       title = {Trusted Guidance Pyramid Network for Human Parsing},
       booktitle = {The 2018 ACM on Multimedia Conference},
       year = {2018}
 }
-    
+```
+
 ### Dataset
 The valuation of our network performance is conducted on the ATR dataset and the Fashion clothing dataset. The ATR dataset is available at [here](https://github.com/lemondan/HumanParsing-Dataset).
 ### Pre-trained models
